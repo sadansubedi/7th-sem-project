@@ -127,9 +127,6 @@ class CoursesViewSet(APIView):
             raise Response({"error": "Course not found"}, status=status.HTTP_404_NOT_FOUND)
       
 
-# class CoursesViewSet(viewsets.ModelViewSet):
-#    queryset = Course.objects.all()
-#    serializer_class = courseserializer 
 
 
 class CoursePDFViewSet(APIView):
